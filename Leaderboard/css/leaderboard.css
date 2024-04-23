@@ -1,0 +1,600 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+*.font24 {
+	font-size: 24px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}	
+*.fade-out {
+	animation: fadeout 3s;
+}
+@keyframes fadeout {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@font-face {
+        font-family: "leaderboardheaderfont";
+        src: url('../fonts/play-vehicle.ttf');
+        font-display: swap;
+}
+@font-face {
+        font-family: "bodonireg";
+        src: url('../fonts/bodoni-reg.ttf');
+        font-display: swap;
+}
+@font-face {
+        font-family: "bodonibold";
+        src: url('../fonts/bodoni-bold.ttf');
+        font-display: swap;
+}
+*.leaderboardheader {
+    font-family: "leaderboardheaderfont", serif;
+}
+*.leaderboardbg {
+background: rgb(57,57,57);
+background: radial-gradient(circle, rgb(57,57,57) 55%, rgb(222,112,8) 100%);
+}
+
+*.leaderboardmobilebg {
+background-color:  #000000; 
+}
+*.font16 {
+	font-size: 16px;
+}
+*.font20 {
+	font-size: 20px;
+}
+*.font32 {
+	font-size: 32px;
+}
+*.font40 {
+	font-size: 40px;
+}
+*.font55 {
+	font-size: 55px;
+}
+
+*.yellow {
+	  text-shadow: 2px 2px 3px purple;
+}
+
+*.orangebg {
+    color:  transparent;
+	background-color: #DE7008;
+}
+*.orangetext {
+	color:  #DE7008;
+	background-color:  transparent;
+}
+*.grid-2-columns{
+  display: grid;
+  height: 250px;
+  align-content: center;
+  text-align: center;
+  align-items:  center;
+  grid-template-columns:  15% 85%;	
+}
+*.grid-3-columns{
+  display: grid;
+  height: 250px;
+  align-content: center;
+  text-align: center;
+  grid-template-columns:  auto auto auto;	
+}
+*.grid-4-columns{
+  display: grid;
+  grid-template-columns: auto auto auto auto;	
+}
+*.grid-5-columns{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;	
+}
+*.floatleft {
+	float: left;
+}
+*.floatright {
+	float: right;
+}
+*.blackbox {
+    color:  transparent;
+	background-color:#000000;
+}
+*.blacktext {
+    color:  #000000;
+	background-color:transparent;	
+}
+
+*.redtext {
+    color:  #FF0000;
+	background-color:transparent;	
+}
+
+*.yellowtext {
+     color:  #FFFF00;
+	background-color:transparent;	   
+}
+*.redglow {
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    /*color:#ff0000;  */
+
+}
+
+*.blackbg {
+	background-color:#000000;
+}
+*.greyborder {
+	border: 4px solid #D3D3D3;
+}
+*.graytext {
+	color: #D3D3D3;
+	background-color:  transparent;
+}
+*.boldtext {
+		font-weight: bold;
+	}
+
+*.lineheight1 {
+	line-height: 1;
+}
+*.lineheight3 {
+	line-height: 3;
+}
+*.flex-container {
+	display: flex;
+        align-items: center; 
+     /*   justify-content: center */
+}
+*.flex-container-mobile {
+	display: flex;
+        align-items: center; 
+        justify-content: center 
+}
+*.centertext {
+		text-align:center;
+	}
+*.leftofcenter {
+	margin-top: -3%;
+	margin-left: 35%;
+}
+*.whitetext {
+	color:#FFFFFF;
+}
+*.padding6 {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+*.padding7 {
+    padding:  7px;
+}
+
+*.padding8 {
+    padding-top: 8px;
+    padding-bottom:  8px;
+}
+*.padding10 {
+	padding: 10px;
+}
+
+*.padding10leftright {
+	padding-left: 10px;
+    padding-right: 10px;
+}
+
+*.padding10right {
+    padding-right: 20px;
+}
+
+*.padding12 {
+	padding-left: 10px;
+	padding-right:10px;
+	padding-top: 12px;
+	padding-bottom:12px;
+}
+*.padding15 {
+	padding: 15px;
+}
+*.absolute {
+	position: absolute;
+}
+*.relative {
+    position:  relative;
+}
+*.lastupdated {
+	margin-top:-5%;
+	margin-left: 70%;
+}
+*.fixed {
+	position: fixed;
+}
+*.padding20 {
+	padding: 20px;
+}
+*.flex1 {
+	display:  flex;
+	justify-content:  space-around;
+}
+*.borderround {
+	border-radius: 15px;
+}
+
+*.borderwhite {
+    border: solid 2px #FFFFFF;
+}
+
+*.halfscreen {
+	width: 50%;
+}
+*.inlineblock {
+	display: inline-block;
+}
+
+*.marquee-new {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 50px;
+  overflow-x: hidden;
+}
+
+*.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-new 32s linear infinite;
+}
+
+@keyframes marquee-new {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+*.marquee {
+  height:  100px;
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color:  #000000;
+  align-items:  center;
+}
+*.marquee span {
+  display: inline-block;
+  position: relative;
+  left: 100%;
+  will-change: left;
+  animation: marquee 80s linear 5s infinite;
+  vertical-align: middle;
+}
+@keyframes marquee {
+  0%   { left: 100%; }
+  25%   { left: 50%; }
+  50%   { left: 0%; }
+  75%   { left: -50%; }
+  100% { left: -100%; }
+}
+
+
+*.marquee-mobile {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color:  #000000;
+}
+*.marquee-mobile span {
+  display: inline-block;
+  position: relative;
+  left: 100%;
+  animation: marquee-mobile 25s linear infinite;
+  vertical-align: middle;
+}
+@keyframes marquee-mobile {
+  0%   { left: 100%; }
+  100% { left: -200%; }
+}
+
+*.height25 {
+	height:  25px;
+}
+
+*.verticalcenter {
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*
+*.marquee-mobile span:nth-child(1) {
+  animation-delay: 0s;
+}
+*.marquee-mobile span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+*.marquee-mobile span:nth-child(3) {
+  animation-delay: 2.6s;
+}
+*.marquee-mobile span:nth-child(4) {
+  animation-delay: 2.4s;
+}
+*.marquee-mobile span:nth-child(5) {
+  animation-delay: 3.2s;
+}*/
+
+
+*.whitebar {
+	position: absolute;
+	display: inline-block;
+	width:3px;
+    color:  transparent;
+	background-color:#FFFFFF;
+}
+*.underlinetext {
+	border-bottom:  3px solid #000000;
+}
+
+*.margin15top {
+    margin-top:  15px;
+}
+
+*.padding15top {
+    padding-top:  15px;
+}
+
+*.padding5 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+*.padding5topbottom {
+	padding-top: 5px;
+	padding-bottom:5px;
+}
+*.hideme {
+	display:  none;
+}
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+
+/* Rounded sliders */
+
+*.bright {
+	filter: brightness(150%);
+}
+*.superbright {
+	filter: brightness(200%);
+}
+
+*.opacity25 {
+    opacity:  .15;
+}
+
+*.firegradient {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+*.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 5s linear;
+}
+
+*.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 5s, opacity 5s linear;
+}
+*.shadow {
+  text-shadow: 2px 2px 5px #000000;
+}
+*.gold {
+	  text-shadow: 2px 2px 15px #ffd700;
+}
+*.white {
+	  text-shadow: 2px 2px 15px #765900;
+}
+*.ambertext {
+	color:  #ffbf00;
+	background-color:  transparent;
+}
+*.brown {
+	  text-shadow: 2px 2px 15px #000000;
+}
+*.boxshadow {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+*.hesonfireclass {
+    right:  256px;
+}
+
+*.hotclass {
+    right:  272px;
+}
+
+
+/* Define the animation named "flicker" */
+@keyframes flicker {
+    /* Initial state of animation */
+    0%, 
+    /* Final state of animation */
+    100% { 
+        text-shadow: 
+            0 -1px 3px #fff, /* Innermost layer - intense heat (white) */
+            0 -2px 6px #FF3, /* Second layer - core of flame (yellow) */
+            0 -6px 12px #F90, /* Middle layer - body of flame (orange) */
+            0 -10px 20px #C33; /* Outermost layer - edges of flame (red) */
+    }
+    /* Middle state of animation */
+    50% { 
+        text-shadow: 
+            0 -2px 6px #fff, /* Innermost layer - intense heat (white) */
+            0 -4px 12px #FF3, /* Second layer - core of flame (yellow) */
+            0 -8px 16px #F90, /* Middle layer - body of flame (orange) */
+            0 -12px 24px #C33; /* Outermost layer - edges of flame (red) */
+    }
+}
+ 
+
+
+*.fire {
+ color: #f5f5f5; /* Light text color */
+ /* Multi-layered text-shadow for fire effect */
+ text-shadow:
+ 0px -1px 3px #fff, /* Innermost layer - intense heat (white) */
+ 0px -2px 6px #FF3, /* Second layer - core of flame (yellow) */
+ 0px -6px 12px #F90, /* Middle layer - body of flame (orange) */
+ 0px -10px 20px #C33; /* Outermost layer - edges of flame (red) */
+ animation: flicker 2s infinite;
+}
+
+
+
+*.fire2 {
+  animation: animation 1s ease-in-out infinite alternate;
+  -moz-animation: animation 1s ease-in-out infinite alternate;
+  -webkit-animation: animation 1s ease-in-out infinite alternate;
+  -o-animation: animation 1s ease-in-out infinite alternate;
+}
+
+*.burn {
+  animation: animation .65s ease-in-out infinite alternate;
+  -moz-animation: animation .65s ease-in-out infinite alternate;
+  -webkit-animation: animation .65s ease-in-out infinite alternate;
+  -o-animation: animation .65s ease-in-out infinite alternate;
+}
+
+@keyframes animation
+{
+0% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}
+}
+
+@-moz-keyframes animation
+{
+0% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}
+}
+
+@-webkit-keyframes animation
+{
+0% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}
+}
+
+@-o-keyframes animation
+{
+0% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}
+}
+
+*.flash {
+  animation: flasher 3s linear infinite;
+}
+
+@keyframes flasher {
+  50% {
+    opacity: .25;
+  }
+}

@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+@font-face {
+        font-family: "seaweed";
+        src: url("seaweed-script.ttf");
+}
+
+@font-face {
+        font-family: "brush";
+        src: url("brush-regular.ttf");
+}
+
+@font-face {
+        font-family: "gladifilthefte";
+        src: url("../images/fonts/Gladifilthefte.ttf");
+}
+
+@font-face {
+        font-family: "ubuntubold";
+        src: url("../images/fonts/ubuntubold.ttf");
+}
+
+*.bgcleveland- {
+  background-image: url("../images/cleveland-skyline-desktop.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+	/*background-image: url("images/lion-bg1.jpg");*/
+  /*min-height: 100%;*/
+	height: 75%;
+}
+
+*.bgclevelandtaxprojection- {
+  background-image: url("../images/cleveland-skyline-desktop.jpg");
+ /*background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size:  cover; /* Resize the background image to cover the entire container */
+	/*background-image: url("images/lion-bg1.jpg");*/
+  /*min-height: 100%;*/
+	/*height: 100%;*/
+}
+
+*.absolute- {
+    position:  absolute;
+}
+
+*.relative- {
+    position:  relative;
+}
+
+*.fiftybelow- {
+    top:  50px;
+}
+
+*.centertextdesktoponly {
+		text-align:center;
+	}
+
+*.maxwidth90percent {
+    max-width:  90%;
+}
+
+*.maxwidth99percent {
+    max-width:  99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-content:  center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-content:  center;
+}
+
+.grid-container-desktop- {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /*justify-content: center;
+  align-content:  center;*/
+}
+
+*.padding10-top- {
+	padding-top: 10px;
+}
+
+*.padding10-bottom- {
+	padding-bottom: 10px;
+}
+
+*.imageresponsive- {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+*.supsmall- {
+  vertical-align: super;
+  font-size: smaller;    
+}
+
+*.sup- {
+  vertical-align: super;
+}
+
+*.sub- {
+    vertical-align:  sub;
+}
+
+*.opacity0 {
+    opacity:  0;
+}
+
+
+*.backgroundblue- {
+   background:  rgb(26,141,255, .25);
+}
+
+*.backgroundpurple- {
+   background:  rgb(26,141,255, .25);
+}
+
+*.backgroundorange- {
+   background:  rgb(255,140,26, .5);
+}
+
+*.backgroundblack- {
+   background:  rgb(0,0,0, .5);
+}
+
+*.margin30percenttop- {
+    margin-top:  5%;
+}
+
+*.margin5leftright- {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+*.marginleftright40 {
+    margin-left:  40px;
+    margin-right: 40px;
+    margin-top:  20px;
+    margin-bottom:  20px;
+}
+
+*.margin5 {
+    margin:  5px;
+}
+
+*.margin10-topbottom-{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+*.margin10top- {
+    margin-top:  10px;
+}
+
+*.margin1000top- {
+    margin-top:  1000px;
+}
+
+*.blueandgraygradient {
+background: rgb(158,184,240);
+background: radial-gradient(circle, rgba(158,184,240,1) 0%, rgba(92,116,217,1) 100%);
+}
+
+*.borderround2 {
+    border-radius:  8px;
+}
+
+*.grayhover:hover {
+  color:  #000000;
+  background-color: #d3d3d3;
+  border-radius:  10px;
+}
+
+*.lightgraybg {
+	background-color: #F1F1F1;
+}
+
+*.maxwidth50 {
+    max-width:  70vw;
+    max-height:  50vh;
+}
+
+*.maxheight50 {
+    max-height:  70vh;
+}
+
+ *.flex-container- {
+     display:  flex;
+     flex-direction:  row;
+     /*text-align:  center;*/
+     align-self: center;
+     justify-content: center;
+     flex-wrap:  wrap;
+     /*align-content:  space-between;*/
+    }
+
+*.flex-container- > span {
+    margin: 5px;
+}
+
+*.flexbox2 {
+   display: flex;
+   justify-content: space-around; 
+   flex-wrap:  wrap;
+}
+.flexbox2 > p {
+	text-align: center;
+}
+
+.flexbox2 > span {
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+*.flex-container-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+*.flex-container-wrap > a, span {
+  text-align: center;
+}
+
+*.flex-container-contact-info {
+    display:  flex;
+    flex-wrap:  wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-container-contact-info > a {
+  margin: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  justify-content: center;
+  align-content:  center;
+}
+
+
+*.scaleuphover:hover {
+	  transform: scale(1.1);
+	   transition: transform .5s;
+	}
+*.scaleupfocus:focus {
+	  transform: scale(1.1);
+	   transition: transform .5s;
+	}
+
+*.padding5leftright- {
+    padding-left: 5px;
+    padding-right:  5px;
+}
+
+*.padding5- {
+    padding:  5px;
+}
+
+*.padding12- {
+    padding:  12px;
+}
+
+*.padding15 {
+    padding:  15px;
+}
+
+*.whiteborder- {
+    border:  solid 2px #FFFFFF;
+}
+
+*.redtext {
+    color:  #FF0000;
+}
+
+*.whitebg {
+    background-color:  #FFFFFF;
+}
+
+*.blackbg {
+    background-color:  #000000;
+}
+
+*.transparent100 {
+    background:  rgba(0,0,0,0);
+}
+
+*.blueborder {
+    border:  2px solid #0000FF;
+}
+
+*.darkblueborder {
+    border:  solid 2px #000082;
+}
+
+*.darkgreentext {
+    color:  #003F07;
+}
+
+*.autowidth {
+    width:  auto;
+}
+
+*.hideme {
+    /*display:  none;*/
+}
+
+*.showme {
+    display:  flex;
+}
+
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #FC7D00;
+  --color-2: #FFFFFF;
+  --color-3: #000000;
+}
+
+.title-word-2 {
+  --color-2: #FC7D00;
+  --color-3: #FFFFFF;
+  --color-1: #000000;
+}
+
+.title-word-3 {
+  --color-3: #FC7D00;
+  --color-1: #FFFFFF;
+  --color-2: #000000;
+}
+
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+*.boldbold {
+    font-family: "ubuntubold";
+}
+
+*.font10 {
+    font-size:  10px;
+}
+
+*.font14 {
+    font-size:  14px;
+}
